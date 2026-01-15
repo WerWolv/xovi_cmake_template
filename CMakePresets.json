@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "displayName": "Base",
+      "description": "Base configuration for all builds",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "generator": "Ninja",
+      "cacheVariables": {
+      }
+    },
+    {
+      "name": "rmpp",
+      "inherits": [ "base" ],
+      
+      "displayName": "reMarkable Paper Pro",
+      "toolchainFile": "cmake/toolchains/remarkable-paper-pro.cmake",
+      "cacheVariables": {
+      }
+    }
+  ],
+  "buildPresets": [
+
+  ],
+  "testPresets": [
+
+  ]
+}
