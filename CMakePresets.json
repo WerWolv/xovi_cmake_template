@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "cmakeMinimumRequired": {
     "major": 3,
     "minor": 20,
@@ -17,12 +17,55 @@
       }
     },
     {
-      "name": "rmpp",
+      "name": "reMarkable 1",
+      "inherits": [ "base" ],
+
+      "toolchainFile": "cmake/toolchains/remarkable-1.cmake",
+      "cacheVariables": {
+      },
+      "vendor": {
+        "jetbrains.com/clion": {
+          "toolchain": "rm1"
+        }
+      }
+    },
+    {
+      "name": "reMarkable 2",
+      "inherits": [ "base" ],
+
+      "toolchainFile": "cmake/toolchains/remarkable-2.cmake",
+      "cacheVariables": {
+      },
+      "vendor": {
+        "jetbrains.com/clion": {
+          "toolchain": "rm2"
+        }
+      }
+    },
+    {
+      "name": "reMarkable Paper Pro",
       "inherits": [ "base" ],
       
-      "displayName": "reMarkable Paper Pro",
       "toolchainFile": "cmake/toolchains/remarkable-paper-pro.cmake",
       "cacheVariables": {
+      },
+      "vendor": {
+        "jetbrains.com/clion": {
+          "toolchain": "rmpp"
+        }
+      }
+    },
+    {
+      "name": "reMarkable Paper Pro Move",
+      "inherits": [ "base" ],
+
+      "toolchainFile": "cmake/toolchains/remarkable-paper-pro-move.cmake",
+      "cacheVariables": {
+      },
+      "vendor": {
+        "jetbrains.com/clion": {
+          "toolchain": "rmppm"
+        }
       }
     }
   ],
